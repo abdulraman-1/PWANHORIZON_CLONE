@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+aside::-webkit-scrollbar {
+    width: 4px; /* Small scrollbar */
+  }
+  
+  aside::-webkit-scrollbar-track {
+    background: transparent; /* Hide track */
+  }
+  
+  aside::-webkit-scrollbar-thumb {
+    background: transparent; /* Hide thumb by default */
+    border-radius: 10px;
+  }
+  
+  aside:hover::-webkit-scrollbar-thumb {
+    background: rgb(187, 187, 187); /* Show scrollbar on hover */
+  }
+  

@@ -5,7 +5,7 @@ import HamburgerMenu from "./HamburgerMenu";
 import { PiUsersThreeFill } from "react-icons/pi";
 
 
-const Header = ({ isOpen, setIsOpen }) => {
+const Header = ({ isOpen, toggleMenu }) => {
     const location = useLocation();
     let title = location.pathname.split("/")[1]
         .replace(/-/g, " ")  // Replace dashes with spaces
@@ -37,7 +37,7 @@ const Header = ({ isOpen, setIsOpen }) => {
                 {/* Right side buttons */}
                 <div className="flex items-center justify-center gap-x-3.5">
                     <div className="h-10 w-10 block md:hidden">
-                        <HamburgerMenu isOpen={isOpen} setIsOpen={setIsOpen} />
+                        <HamburgerMenu isOpen={isOpen} toggleMenu={toggleMenu}/>
                     </div>
                     <div className="flex items-center relative">
                         <img src={nav_des} className="hidden -z-10 md:block absolute right-24" />

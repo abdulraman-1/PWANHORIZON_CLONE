@@ -16,16 +16,16 @@ const HomePage = () => {
 
                 {/* TEXT CONTENT */}
                 <div className="absolute w-full h-full flex flex-col items-center justify-center text-white top-0">
-                    <div className="h-0.5 bg-red-600 w-16 mb-8"></div>
-                    <p className="text-xl xl:text-2xl font-bold">PWAN HAVEN</p>
-                    <h1 className="text-center text-3xl xl:text-6xl font-bold">
+                    <div className="h-0.5 bg-red-600 w-16 mb-4"></div>
+                    <p className="text-md xl:text-2xl font-bold">PWAN HAVEN</p>
+                    <h1 className="text-center text-xl xl:text-6xl font-bold">
                         WELCOME
                         <br />
                         TO
                         <br />
                         PWAN HAVEN
                     </h1>
-                    <div className="flex items-center justify-center h-0.5 bg-gray-500 w-42 mt-8">
+                    <div className="flex items-center justify-center h-0.5 bg-gray-500 w-42 mt-4">
                         <div className="w-2.5 h-2.5 rounded-full bg-red-600"></div>
                     </div>
 

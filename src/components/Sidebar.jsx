@@ -4,7 +4,7 @@ import { FaPlus, FaFacebookF, FaInstagram, FaTwitter, FaLinkedin } from "react-i
 import { Link } from "react-router-dom";
 import "../index.css"
 
-const Sidebar = ({isOpen}) => {
+const Sidebar = ({isOpen, toggleMenu}) => {
     const [showAbout, setShowAbout] = useState(false);
     const [showEstate, setShowEstate] = useState(false);
 
@@ -19,17 +19,17 @@ const Sidebar = ({isOpen}) => {
         <aside className={`w-64 z-20 fixed top-0 left-0 bg-white ${isOpen ? 'block' : 'hidden'} md:block h-screen overflow-y-auto`}>
             <nav className="py-28">
                 <ul>
-                    <li className="px-6 py-3 border-t border-gray-300 relative group">
-                        <div className="absolute top-0 left-0 w-1 h-0 bg-red-600 transition-all duration-300 group-hover:h-full"></div>
-                        <Link to="/" className="flex text-xs font-bold items-center text-gray-600">
+                    <li className="px-6 py-3 border-t border-gray-200 relative group">
+                        <div className="absolute top-0 left-0 w-1 h-0 bg-red-600 transition-normal duration-200 group-active:h-full group-hover:h-full"></div>
+                        <Link onClick={toggleMenu} to="/" className="flex text-xs font-bold items-center text-gray-600">
                             <svg className="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                             </svg>
                             HOME
                         </Link>
                     </li>
-                    <li className="px-6 py-3 border-t border-gray-300 relative group cursor-pointer">
-                        <div className="absolute top-0 left-0 w-1 h-0 bg-red-600 transition-all duration-300 group-hover:h-full"></div>
+                    <li className="px-6 py-3 border-t border-gray-200 relative group cursor-pointer">
+                        <div className="absolute top-0 left-0 w-1 h-0 bg-red-600 transition-normal duration-200 group-active:h-full group-hover:h-full"></div>
                         <div onClick={handleShowAbout} className="flex text-xs font-bold items-center text-gray-600">
                             <svg className="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
@@ -42,25 +42,25 @@ const Sidebar = ({isOpen}) => {
                         {showAbout && (
                             <ul>
                                 <li className="px-8 py-3 relative group">
-                                    <Link to="/about" className="flex text-xs font-bold items-center text-gray-600">
+                                    <Link onClick={toggleMenu} to="/about" className="flex text-xs font-bold items-center text-gray-600">
                                         ABOUT US
                                     </Link>
                                 </li>
                                 <li className="px-8 py-3 relative group">
-                                    <Link to="/board-of-directors" className="flex text-xs font-bold items-center text-gray-600">
+                                    <Link onClick={toggleMenu} to="/board-of-directors" className="flex text-xs font-bold items-center text-gray-600">
                                         BOARD OF DIRECTORS
                                     </Link>
                                 </li>
                                 <li className="px-8 py-3 relative group">
-                                    <Link to="/our-team" className="flex text-xs font-bold items-center text-gray-600">
+                                    <Link onClick={toggleMenu} to="/our-team" className="flex text-xs font-bold items-center text-gray-600">
                                         OUR TEAM
                                     </Link>
                                 </li>
                             </ul>
                         )}
                     </li>
-                    <li className="px-6 py-3 border-t border-gray-300 relative group cursor-pointer">
-                        <div className="absolute top-0 left-0 w-1 h-0 bg-red-600 transition-all duration-300 group-hover:h-full"></div>
+                    <li className="px-6 py-3 border-t border-gray-200 relative group cursor-pointer">
+                        <div className="absolute top-0 left-0 w-1 h-0 bg-red-600 transition-normal duration-200 group-active:h-full group-hover:h-full"></div>
                         <div onClick={handleShowEstate} className="flex text-xs font-bold items-center text-gray-600">
                             <svg className="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
@@ -73,7 +73,7 @@ const Sidebar = ({isOpen}) => {
                         {showEstate && (
                             <ul>
                                 <li className="px-8 py-3 relative group">
-                                    <Link to="#" className="flex text-xs font-bold items-center text-gray-600">
+                                    <Link onClick={toggleMenu} to="/lagos-estate" className="flex text-xs font-bold items-center text-gray-600">
                                         LAGOS
                                     </Link>
                                 </li>
@@ -82,17 +82,17 @@ const Sidebar = ({isOpen}) => {
                     </li>
                     {/* Rest of list items remain the same */}
                     
-                    <li className="px-6 py-3 border-t border-gray-300 relative group">
-                        <div className="absolute top-0 left-0 w-1 h-0 bg-red-600 transition-all duration-300 group-hover:h-full"></div>
-                        <Link to="/house" className="flex text-xs font-bold items-center text-gray-600">
+                    <li className="px-6 py-3 border-t border-gray-200 relative group">
+                        <div className="absolute top-0 left-0 w-1 h-0 bg-red-600 transition-normal duration-200 group-active:h-full group-hover:h-full"></div>
+                        <Link  onClick={toggleMenu} to="/house" className="flex text-xs font-bold items-center text-gray-600">
                             <svg className="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                             </svg>
                             HOUSES
                         </Link>
                     </li>
-                    <li className="px-6 py-3 border-t border-gray-300 relative group">
-                        <div className="absolute top-0 left-0 w-1 h-0 bg-red-600 transition-all duration-300 group-hover:h-full"></div>
+                    <li className="px-6 py-3 border-t border-gray-200 relative group">
+                        <div className="absolute top-0 left-0 w-1 h-0 bg-red-600 transition-normal duration-200 group-active:h-full group-hover:h-full"></div>
                         <Link to="" className="flex text-xs font-bold items-center text-gray-600">
                             <svg className="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
@@ -100,9 +100,9 @@ const Sidebar = ({isOpen}) => {
                             VIDEOS
                         </Link>
                     </li>
-                    <li className="px-6 py-3 border-t border-b border-gray-300 relative group">
-                        <div className="absolute top-0 left-0 w-1 h-0 bg-red-600 transition-all duration-300 group-hover:h-full"></div>
-                        <Link to="contacts" className="flex text-xs font-bold items-center text-gray-600">
+                    <li className="px-6 py-3 border-t border-b border-gray-200 relative group">
+                        <div className="absolute top-0 left-0 w-1 h-0 bg-red-600 transition-normal duration-200 group-active:h-full group-hover:h-full"></div>
+                        <Link  onClick={toggleMenu} to="contacts" className="flex text-xs font-bold items-center text-gray-600">
                             <svg className="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                             </svg>
@@ -140,7 +140,7 @@ const Sidebar = ({isOpen}) => {
                 </div>
             </div>
 
-            <div className="px-6 pb-8 mt-10 border-b border-gray-300">
+            <div className="px-6 pb-8 mt-10 border-b border-gray-200">
                 <h3 className="text-xs font-bold text-gray-500 mb-4">STAY CONNECTED WITH US</h3>
                 <div className="flex space-x-2">
                     <Link to="#" className="w-8 h-8 bg-red-600 text-white flex items-center justify-center">

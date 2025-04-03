@@ -6,14 +6,18 @@ import { useState } from "react";
 const Approute = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <>
-        <Header isOpen={isOpen} setIsOpen={setIsOpen}/>
-        <Sidebar isOpen={isOpen}/>
+      <Header isOpen={isOpen} toggleMenu={toggleMenu} />
+      <Sidebar isOpen={isOpen} toggleMenu={toggleMenu} />
 
-        <Outlet />
+      <Outlet />
     </>
-  )
-}
+  );
+};
 
-export default Approute
+export default Approute;

@@ -1,11 +1,9 @@
 import { useState } from 'react';
 
-const HamburgerMenu = ({isOpen, setIsOpen}) => {
+const HamburgerMenu = ({isOpen, toggleMenu}) => {
   
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+  
 
   return (
     <button 

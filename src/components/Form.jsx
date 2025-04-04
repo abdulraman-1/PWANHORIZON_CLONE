@@ -49,7 +49,7 @@ const Form = ({ estateflyer, estatename, estatestyle, estatedes, estatefulldes, 
                 <div className="flex mt-12 group z-20">
                     <div className="w-0 group-active:w-12 group-hover:w-12 transition-normal duration-100 bg-gray-600"></div>
                     <a href={estateform} target="_blank">
-                        <button className="text-xs px-6 py-4 font-semibold bg-red-600 text-white">
+                        <button className="text-xs whitespace-nowrap px-6 py-4 font-semibold bg-red-600 text-white">
                             DOWNLOAD SUBSCRIPTION FORM
                         </button>
                     </a>

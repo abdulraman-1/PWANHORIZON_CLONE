@@ -18,11 +18,11 @@ const Header = ({ isOpen, toggleMenu }) => {
 
     return (
         <header className="bg-white fixed top-0 left-0 w-full shadow z-50">
-            <div className="max-w-[98%] mx-auto px-4 py-5 flex justify-between items-center">
+            <div className=" mx-auto px-3 py-5 flex justify-between items-center">
                 <div className="flex items-center">
                     {/* Logo */}
-                    <div className="mx-auto md:pl-12 md:w-56">
-                        <div className="flex w-24 h-6 items-center">
+                    <div className="mx-auto md:pl-16 md:w-60">
+                        <div className="flex w-16 md:w-24 h-6 items-center">
                             <img src="/PWANHORIZON.png" alt="PWANHORIZON LOGO" className="w-full h-auto" />
                         </div>
                     </div>

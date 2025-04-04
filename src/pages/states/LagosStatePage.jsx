@@ -15,7 +15,7 @@ const LagosStatePage = () => {
     return (
         <Mainlayout>
             <div className="w-full xl:w-4/5 mb-24">
-                <div className="flex flex-col xl:flex-row gap-4 flex-wrap">
+                <div className="flex flex-col xl:flex-row xl:gap-4 flex-wrap">
                     {
                         estateName.map((value, index) => (
                             <EstateCard estatename={value.name} key={index} path={value.path} />

@@ -21,7 +21,7 @@ const Footer = () => {
                 <div className="h-28 w-full"></div>
                 <div className="flex justify-between flex-col md:flex-row items-start md:items-center py-12 border-t border-gray-300">
                     <h3 className="text-xs text-gray-500 font-bold">
-                        PWANHAVEN || {year} All rights reserved.
+                        PWAN HORIZON || {year} All rights reserved.
                     </h3>
                     <button onClick={scrollToTop} className="pointer mt-8 md:mt-0 whitespace-nowrap bg-gray-200 py-2 rounded-sm px-8 text-xs font-semibold relative">
                         <div className="bg-black hover:bg-red-600 active:bg-red-600 text-white rounded-full absolute -top-4 right-26 md:-right-5 w-12 h-12 flex items-center justify-center">

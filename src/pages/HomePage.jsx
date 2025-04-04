@@ -1,6 +1,7 @@
 import Mainlayout from "../Mainlayout"
 import Footer from "../components/Footer";
 import video from "../assets/video_bg.mp4"
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
     return (
@@ -17,20 +18,22 @@ const HomePage = () => {
                 {/* TEXT CONTENT */}
                 <div className="absolute w-full h-full flex flex-col items-center justify-center text-white top-0">
                     <div className="h-0.5 bg-red-600 w-16 mb-4 hidden md:block"></div>
-                    <p className="text-md xl:text-2xl font-bold">PWAN HAVEN</p>
+                    <p className="text-md xl:text-2xl font-bold">PWAN HORIZON</p>
                     <h1 className="text-center text-xl xl:text-6xl font-bold">
                         WELCOME
                         <br />
                         TO
                         <br />
-                        PWAN HAVEN
+                        PWAN HORIZON
                     </h1>
                     <div className="flex items-center justify-center h-0.5 bg-gray-500 w-42 mt-4">
                         <div className="w-2.5 h-2.5 rounded-full bg-red-600"></div>
                     </div>
-                    <button className="bg-red-600 px-10 font-bold py-1 md:py-2 rounded-sm text-xs md:text-sm mt-2 md:mt-4">
-                        About Us
-                    </button>
+                    <Link to="/about">
+                        <button className="bg-red-600 px-10 font-bold py-1 md:py-2 rounded-sm text-xs md:text-sm mt-2 md:mt-4">
+                            About Us
+                        </button>
+                    </Link>
                 </div>
             </div>
             <Footer />

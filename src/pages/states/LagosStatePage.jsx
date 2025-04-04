@@ -7,9 +7,6 @@ const LagosStatePage = () => {
     const estateName = [
         {name: "Irede Estate", path:"/irede-estate"},
         {name: "Duke And Duchess Estate", path:"/duke-and-duchess-estate"},
-        {name: "Buckingham Estate", path:"/buckingham-estate"},
-        {name: "Horizon Court", path:"/horizon court"},
-        {name: "Obibi Eze Estate", path:"/obibi-eze-estate"}
     ]
 
     return (

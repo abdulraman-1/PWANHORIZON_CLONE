@@ -74,7 +74,7 @@ const CorporateStatement = () => {
                     {item.description.map((value, i) => (
                       <div key={i} className="flex items-center gap-2">
                         <div className="w-2 h-2 rounded-full bg-red-600"></div>
-                        <p className="text-xs text-gray-500">{value}</p>
+                        <p className="text-xs font-bold text-gray-500">{value}</p>
                       </div>
                     ))}
                   </div>

@@ -12,7 +12,7 @@ const Header = ({ isOpen, toggleMenu }) => {
         .toUpperCase();
 
     if (title === "") {
-        title = "PWANHORIZON";
+        title = "PWAN HORIZON";
     }
 
 
@@ -35,16 +35,16 @@ const Header = ({ isOpen, toggleMenu }) => {
                 </div>
 
                 {/* Right side buttons */}
-                <div className="flex items-center gap-2 justify-center">
+                <div className="flex pr-0 md:pr-16 items-center gap-2 justify-center">
                     <div className="block lg:hidden">
                         <HamburgerMenu isOpen={isOpen} toggleMenu={toggleMenu}/>
                     </div>
                     <div className="flex items-center relative">
                         <img src={nav_des} className="hidden -z-10 lg:block absolute right-24" />
-                        <Link>
-                            <button className="flex items-center font-semibold gap-1 bg-red-600 z-1 text-black px-4 py-2 text-[0.7rem] xl:text-sm whitespace-nowrap">
+                        <Link to="/buynow">
+                            <button className="flex rounded-sm items-center font-semibold gap-2 bg-red-600 z-1 text-black px-6 py-3 text-[0.6rem] xl:text-sm whitespace-nowrap">
                                 <PiUsersThreeFill className="text-white" />
-                                LET'S CHAT
+                                <span className="text-xs">BUY NOW</span>
                             </button>
                         </Link>
                     </div>

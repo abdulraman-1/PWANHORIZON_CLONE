@@ -2,7 +2,7 @@ import Mainlayout from "../Mainlayout";
 import CorporateStatement from "../components/CorporateStatement";
 import GetInTouch from "../components/GetInTouch";
 import Footer from "../components/Footer";
-import pwanhaven_about from "../assets/images/pwanhaven_about.jpg"; // Correct way to import images in React
+import pwanhaven_about from "../assets/images/pwanhaven_about.png"; // Correct way to import images in React
 import pwanhaven_staff from "../assets/images/pwanhaven_staff.jpg"; // Correct way to import images in React
 import line1_des from "../assets/svg_designs/line1_design.svg"
 import line2_des from "../assets/svg_designs/line2_design.svg"
@@ -20,14 +20,13 @@ const AboutPage = () => {
 
                         <img
                             src={pwanhaven_about}
-                            alt="About PWAN Haven"
                             className="w-full h-full object-cover"
                         />
                     </div>
 
                     {/* Text Content */}
                     <h1 className="text-white px-8 py-3 text-2xl xl:text-4xl font-bold absolute bottom-10 left-0">
-                        PWAN HAVEN <span className="text-red-600">INVESTMENT & REALTORS</span> <br /> LIMITED
+                        PWAN HORIZON <span className="text-red-600">INVESTMENT & REALTORS</span> <br /> LIMITED
                         <div className="mt-4">
                             <img src={line1_des} className="w-screen" />
                         </div>
@@ -35,21 +34,21 @@ const AboutPage = () => {
 
                 </div>
 
-                <div className="relative w-full bg-white px-6 xl:px-18">
+                <div className="relative w-full bg-white pt-24 px-6 xl:px-18">
                     <div className="absolute right-0 bottom-0 opacity-15 ">
                         <img src={note_des} className="h-52" />
                     </div>
                     <div className="flex flex-col xl:flex-row">
                         {/* Image Section */}
-                        <div className="flex-1 pt-24 xl:pt-0  my-auto w-full h-full text-center">
+                        <div className="flex-1  my-auto w-full h-full text-center">
                             <img src={pwanhaven_staff} className="w-full h-auto mx-auto" alt="PWAN Haven Staff" />
                         </div>
 
                         {/* Text Section */}
                         <div className="flex-1 py-6 xl:pl-6 xl:py-24">
-                            <h2 className="text-2xl xl:text-4xl mb-6 font-bold text-left">PWANHAVEN</h2>
+                            <h2 className="text-2xl xl:text-4xl mb-6 font-bold text-left">PWAN HORIZON</h2>
                             <p className="text-xs xl:text-sm text-gray-400 leading-6 font-semibold">
-                                PWAN Haven Investment & Realtors Limited Is A Real Estate Network Marketing Company And An Affiliate Of Nigeria Foremost Real Estate Firm, The Pwan Group. Founded On The 8th Of December 2017 And Registered With The Corporate Affairs Commission As Pwan Haven Investment & Realtors Ltd And Also With The Lagos State Real Estate Regulatory Authority With Permit No (bos/1000033/2020). Pwan Haven Is Your One-stop-shop For Properties And Real Estate Investments; Residential And Commercial Lands And Buildings Etc.
+                                PWAN HORIZON Investment & Realtors Limited Is A Real Estate Network Marketing Company And An Affiliate Of Nigeria Foremost Real Estate Firm, The Pwan Group. Founded On The 8th Of December 2017 And Registered With The Corporate Affairs Commission As Pwan Haven Investment & Realtors Ltd And Also With The Lagos State Real Estate Regulatory Authority With Permit No (bos/1000033/2020). Pwan Haven Is Your One-stop-shop For Properties And Real Estate Investments; Residential And Commercial Lands And Buildings Etc.
                             </p>
                             <div className="mt-6">
                                 <img src={line2_des} className="w-full" alt="Line Divider" />

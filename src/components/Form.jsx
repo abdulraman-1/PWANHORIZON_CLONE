@@ -3,7 +3,7 @@ import box_des from "../assets/svg_designs/box_design.svg";
 import { IoPin } from "react-icons/io5";
 
 
-const Form = ({ estateflyer, estatename, estatestyle, subform, estatedes, estatefulldes, estateamenities, estatelocation }) => {
+const Form = ({ estateflyer, estatename, estatestyle, estatedes, estatefulldes, estateamenities, estatelocation, estateform }) => {
     return (
         <div className="bg-white p-10 xl:p-20 w-full xl:w-4/5 mb-24 relative">
             {/* Background Designs */}
@@ -48,7 +48,7 @@ const Form = ({ estateflyer, estatename, estatestyle, subform, estatedes, estate
 
                 <div className="flex mt-12 group">
                     <div className="w-0 group-active:w-12 group-hover:w-12 transition-normal duration-100 bg-gray-600"></div>
-                    <a href={subform}>
+                    <a href={estateform} target="_blank">
                         <button className="text-xs px-6 py-4 font-semibold bg-red-600 text-white">
                             DOWNLOAD SUBSCRIPTION FORM
                         </button>

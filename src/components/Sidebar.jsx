@@ -77,20 +77,16 @@ const Sidebar = ({isOpen, toggleMenu}) => {
                                         <span className="hover:text-red-600 active:text-red-600">LAGOS</span>
                                     </Link>
                                 </li>
+                                <li className="px-11 py-3 relative group">
+                                    <Link onClick={toggleMenu} to="/delta-estate" className="flex text-xs font-bold items-center text-gray-500">
+                                        <span className="hover:text-red-600 active:text-red-600">DELTA</span>
+                                    </Link>
+                                </li>
                             </ul>
                         )}
                     </li>
                     {/* Rest of list items remain the same */}
                     
-                    <li className="px-6 py-4 border-t border-gray-200 relative group">
-                        <div className="absolute top-0 left-0 w-1 h-0 bg-red-600 transition-normal duration-200 group-active:h-full group-hover:h-full"></div>
-                        <Link  onClick={toggleMenu} to="/house" className="flex text-xs font-bold items-center text-gray-500">
-                            <svg className="w-5 h-5 mr-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                            </svg>
-                            <span className="hover:text-red-600 active:text-red-600">HOUSES</span>
-                        </Link>
-                    </li>
                     <li className="px-6 py-4 border-t border-gray-200 relative group">
                         <div className="absolute top-0 left-0 w-1 h-0 bg-red-600 transition-normal duration-200 group-active:h-full group-hover:h-full"></div>
                         <a href="https://www.youtube.com/watch?v=z7rwCbkQpCY" target="_blank" className="flex text-xs font-bold items-center text-gray-500">

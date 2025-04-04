@@ -9,9 +9,16 @@ import ContactUsPage from "./pages/ContactUsPage";
 
 import LagosStatePage from "./pages/states/LagosStatePage"
 
+import IredePage from "./pages/estates/IredePage";
+
+
+import ScrollToTop from "./components/ScrollToTop";
+
 const App = () => {
   return (
-    <Routes>
+    <>
+    <ScrollToTop />
+      <Routes>
       <Route path="/" element={<Approute />}>
         <Route index element={<HomePage />} />
         <Route path="about" element={<AboutPage />} />
@@ -20,8 +27,12 @@ const App = () => {
         <Route path="house" element={<HousePage />} />
         <Route path="contacts" element={<ContactUsPage />} />
         <Route path="lagos-estate" element={<LagosStatePage />} />
+
+
+        <Route path="irede-estate" element={<IredePage />} />
       </Route>
     </Routes>
+    </>
   );
 };
 

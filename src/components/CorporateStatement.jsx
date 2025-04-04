@@ -16,28 +16,28 @@ const CorporateStatement = () => {
         </div>
 
         {/* Section Title */}
-        <h2 className="text-3xl font-semibold mb-10">
-          OUR <span className="text-red-600">CORPORATE</span> STATEMENT
+        <h2 className="text-3xl font-bold mb-10">
+          OUR  COOPERATE <span className="text-red-600">STATEMENT</span>
         </h2>
 
         {/* Vertical Line */}
-        <div className="absolute -left-3.5 top-16 bottom-10 w-0.5 bg-gray-200"></div>
+        <div className="absolute -left-2.5 top-16 bottom-10 w-0.5 bg-gray-100"></div>
 
         {/* Sections */}
         {[
           {
-            icon: <FaEye />,
+            icon: <FaEye className='text-black' />,
             title: "OUR VISION",
             description: "To make Homeownership Dream A Reality",
           },
           {
-            icon: <FaGraduationCap />,
+            icon: <FaGraduationCap className='text-black' />,
             title: "OUR MISSION",
             description:
               "To discover affordable land everywhere and make this known to you and also show you how you can make money to buy land & build your own home.",
           },
           {
-            icon: <FaAnchor />,
+            icon: <FaAnchor className='text-black' />,
             title: "OUR CORE VALUES",
             description: [
               "A - ACCOUNTABILITY",
@@ -50,36 +50,36 @@ const CorporateStatement = () => {
         ].map((item, index) => (
           <div
             key={index}
-            className="relative flex flex-col xl:flex-row items-center gap-6 mb-10 w-full"
+            className="relative flex flex-col xl:flex-row items-center gap-4 mb-10 w-full"
           >
             {/* Plus Icon */}
-            <div className="absolute left-[-30px] w-8 h-8 border-6 border-red-600 flex items-center justify-center rounded-full bg-white">
-              <FaPlus className="text-sm font-bold" />
+            <div className="absolute left-[-30px] w-11 h-11 border-6 border-red-600 flex items-center justify-center rounded-full bg-white">
+              <FaPlus className="text-[0.6rem] text-gray-500 font-bold" />
             </div>
 
             {/* Left Box */}
-            <div className="bg-gray-200 flex items-center gap-4 p-6 ml-5 w-full">
-              <div className="bg-red-600 p-3 text-white text-lg drop-shadow-xl">
+            <div className="bg-gray-100 border border-gray-200 rounded-sm flex gap-4 p-6 ml-12 w-full">
+              <div className="bg-red-600 rounded-sm p-3 text-white text-lg drop-shadow-xl">
                 {item.icon}
               </div>
-              <h3 className="font-semibold">{item.title}</h3>
+              <h3 className="font-bold text-sm">{item.title}</h3>
             </div>
 
             {/* Right Box */}
             <div className="flex justify-center items-center w-full">
-              <div className="bg-red-600 w-2 h-2 rounded-full mr-8"></div>
-              <div className="bg-gray-200 p-6 flex flex-1 w-full">
+              <div className="bg-red-600 w-2 h-2 rounded-full mr-4"></div>
+              <div className="bg-gray-100 border border-gray-200 rounded-sm py-12 px-6 flex flex-1 w-full">
                 {Array.isArray(item.description) ? (
                   <div className="p-3 bg-gray-100 space-y-2 w-full">
                     {item.description.map((value, i) => (
                       <div key={i} className="flex items-center gap-2">
                         <div className="w-2 h-2 rounded-full bg-red-600"></div>
-                        <p className="text-xs">{value}</p>
+                        <p className="text-xs text-gray-500">{value}</p>
                       </div>
                     ))}
                   </div>
                 ) : (
-                  <p className="font-semibold text-sm">{item.description}</p>
+                  <p className="font-semibold text-sm text-gray-500">{item.description}</p>
                 )}
               </div>
             </div>

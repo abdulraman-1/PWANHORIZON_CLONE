@@ -14,6 +14,7 @@ import h9 from "../assets/images/team/h9.jpg"
 import h10 from "../assets/images/team/h10.jpg"
 import h11 from "../assets/images/team/h11.jpg"
 import h12 from "../assets/images/team/h12.jpg"
+import { FaPlus } from "react-icons/fa";
 
 const OurTeamPage = () => {
     const team = [
@@ -22,13 +23,13 @@ const OurTeamPage = () => {
         { image: h3, name: "Micheal Okesanya", position: "HOD, ACCOUNTS" },
         { image: h4, name: "Emmanuel Esangbedo", position: "Chief Operating Officer" },
         { image: h4, name: "Precious Okpaje", position: "Chief Operating Officer" },
-        { image: h6 , name: "Emmanuella Nzenwa", position: "Research & Development" },
-        { image: h7 , name: "Oteri Eseoghene", position: "HOD, Media Department" },
-        { image: h8 , name: "Murphy Ibeh", position: "AUDITOR" },
-        { image: h9 , name: "Kevwe Onovughakpo", position: "BDE Asaba" },
-        { image: h10 , name: "Nelson Ita", position: "BDE UYO" },
-        { image: h11 , name: "Anthony Sanco", position: "BDE WARRI" },
-        { image: h12 , name: "Donald Okereke", position: "BDE OWERRI" },
+        { image: h6, name: "Emmanuella Nzenwa", position: "Research & Development" },
+        { image: h7, name: "Oteri Eseoghene", position: "HOD, Media Department" },
+        { image: h8, name: "Murphy Ibeh", position: "AUDITOR" },
+        { image: h9, name: "Kevwe Onovughakpo", position: "BDE Asaba" },
+        { image: h10, name: "Nelson Ita", position: "BDE UYO" },
+        { image: h11, name: "Anthony Sanco", position: "BDE WARRI" },
+        { image: h12, name: "Donald Okereke", position: "BDE OWERRI" },
     ]
 
     return (
@@ -51,10 +52,22 @@ const OurTeamPage = () => {
                     <div className="flex gap-2 flex-wrap w-full">
                         {
                             team.map((value, index) => (
-                                <div key={index} className="bg-white rounded-b-sm w-full xl:w-[32.5%] p-2 border border-gray-300">
-                                    <img src={value.image} className="max-w-full h-auto" />
-                                    <h3 className="text-red-600 font-semibold mt-3">{value.name}</h3>
-                                    <p className="text-sm font-semibold">{value.position}</p>
+                                <div key={index} className="bg-white rounded-b-sm w-full xl:w-[32.5%] border border-gray-300">
+                                    <div className="relative w-full group overflow-hidden">
+                                        <img src={value.image} className="max-w-full h-auto" />
+
+                                        {/* Hover Overlay */}
+                                        <div className="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,.4)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                                            <div className="w-full h-full flex items-center justify-center">
+                                                <div className="flex items-center justify-center w-12 h-12 rounded-full border-6 border-gray-100 bg-red-600">
+                                                    <FaPlus className="text-xs " />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <h3 className="text-red-600 px-2 font-semibold mt-3">{value.name}</h3>
+                                    <p className="text-sm px-2 pb-2 font-semibold">{value.position}</p>
                                 </div>
                             ))
                         }

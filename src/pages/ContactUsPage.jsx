@@ -33,41 +33,41 @@ const ContactUsPage = () => {
                 <div className="flex flex-col xl:flex-row gap-4">
 
                     <div className="bg-white relative flex items-center gap-4 p-6 w-full">
-                        <div className="absolute top-0 right-0 p-1 bg-gray-100">
-                            <span className="text-sm font-black">01.</span>
+                        <div className="absolute top-0 right-0 px-2 bg-gray-100">
+                            <span className="text-xs font-bold">01.</span>
                         </div>
-                        <div className="bg-red-600 p-3 text-white text-lg drop-shadow-xl">
+                        <div className="bg-red-600 p-3 rounded-sm text-white text-lg drop-shadow-xl">
                             <FaPhone className="text-black" />
                         </div>
                         <div>
-                            <h3 className="font-bold">Our Phone Number</h3>
-                            <p className="font-semibold text-gray-500 text-sm">09134115554</p>
-                            <p className="font-semibold text-gray-500 text-sm">09134115554</p>
+                            <h3 className="font-bold text-md text-gray-900">Our Phone Number</h3>
+                            <p className="font-semibold text-gray-500 text-xs">080 6280 6026</p>
+                            <p className="font-semibold text-gray-500 text-xs">080 3303 6833</p>
                         </div>
                     </div>
                     <div className="bg-white relative flex items-center gap-4 p-6 w-full">
-                        <div className="absolute top-0 right-0 p-1 bg-gray-100">
-                            <span className="text-sm font-black">02.</span>
+                        <div className="absolute top-0 right-0 px-2 bg-gray-100">
+                            <span className="text-xs font-bold">02.</span>
                         </div>
-                        <div className="bg-red-600 p-3 text-white text-lg drop-shadow-xl">
+                        <div className="bg-red-600 p-3 rounded-sm text-white text-lg drop-shadow-xl">
                             <CiMail className="text-black" />
                         </div>
                         <div>
-                            <h3 className="font-bold">Our E-mail</h3>
-                            <p className="font-semibold text-gray-500 text-sm">PWANHAVEN@GMAIL.COM</p>
-                            <p className="font-semibold text-gray-500 text-sm">PWANHAVEN@GMAIL.COM</p>
+                            <h3 className="font-bold text-md text-gray-900">Our E-mail</h3>
+                            <p className="font-semibold text-gray-500 text-xs">pwanhorizon@gmail.com</p>
+                            <p className="font-semibold text-gray-500 text-xs">info@pwanhorizon.com</p>
                         </div>
                     </div>
                     <div className="bg-white relative flex items-center gap-4 p-6 w-full">
-                        <div className="absolute top-0 right-0 p-1 bg-gray-100">
-                            <span className="text-sm font-black">03.</span>
+                        <div className="absolute top-0 right-0 px-2 bg-gray-100">
+                            <span className="text-xs font-bold">03.</span>
                         </div>
-                        <div className="bg-red-600 p-3 text-white text-lg drop-shadow-xl">
+                        <div className="bg-red-600 p-3 rounded-sm text-white text-lg drop-shadow-xl">
                             <FaMap className="text-black" />
                         </div>
                         <div>
-                            <h3 className="font-bold">Office Address</h3>
-                            <p className="font-semibold text-gray-500 text-sm">No 10 road 4, Lekki County Homes Ikota Villa Lekki Lagos.</p>
+                            <h3 className="font-bold text-md text-gray-900">Office Address</h3>
+                            <p className="font-semibold text-gray-500 text-xs">D.N Danjuma House, KM 49, Olòkonla, Adjacent Lagos Business School, Lekki – Epe Expressway, Eti-Osa, Lagos 106104, Lagos, Nigeria.</p>
                         </div>
                     </div>
 

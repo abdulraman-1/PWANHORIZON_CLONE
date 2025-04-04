@@ -7,10 +7,10 @@ const Form = ({ estateflyer, estatename, estatestyle, estatedes, estatefulldes, 
     return (
         <div className="bg-white p-10 xl:p-20 w-full xl:w-4/5 mb-24 relative">
             {/* Background Designs */}
-            <div className="absolute z-10 right-0 bottom-0 opacity-15">
+            <div className="absolute z-10 right-0 bottom-0 opacity-15 pointer-events-none">
                 <img src={note_des} className="h-52" />
             </div>
-            <div className="absolute z-10 right-0 top-0 opacity-80">
+            <div className="absolute z-10 right-0 top-0 opacity-80 pointer-events-none">
                 <img src={box_des} className="h-22" />
             </div>
             <div className="">
@@ -46,7 +46,7 @@ const Form = ({ estateflyer, estatename, estatestyle, estatedes, estatefulldes, 
 
                 <p className="text-gray-500 my-4  font-semibold">HURRY, SUBSCRIBE NOW WHILE OFFER LAST!!</p>
 
-                <div className="flex mt-12 group">
+                <div className="flex mt-12 group z-20">
                     <div className="w-0 group-active:w-12 group-hover:w-12 transition-normal duration-100 bg-gray-600"></div>
                     <a href={estateform} target="_blank">
                         <button className="text-xs px-6 py-4 font-semibold bg-red-600 text-white">

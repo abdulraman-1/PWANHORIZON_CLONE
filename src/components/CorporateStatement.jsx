@@ -33,8 +33,7 @@ const CorporateStatement = () => {
           {
             icon: <FaGraduationCap className='text-black' />,
             title: "OUR MISSION",
-            description:
-              "To discover affordable land everywhere and make this known to you and also show you how you can make money to buy land & build your own home.",
+            description: "To empower clients through transparent transactions and personalized service, setting new standards in the real estate industry.",
           },
           {
             icon: <FaAnchor className='text-black' />,

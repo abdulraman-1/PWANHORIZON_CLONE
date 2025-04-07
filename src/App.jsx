@@ -40,7 +40,6 @@ const App = () => {
         <Route path="horizon-court" element={<HorizonPage />} />
         <Route path="obibi-eze-estate" element={<ObibiPage />} />
         <Route path="duke-and-duchess-estate" element={<DukePage />} />
-
       </Route>
     </Routes>
     </>

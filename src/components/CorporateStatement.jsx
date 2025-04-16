@@ -1,7 +1,7 @@
 import React from 'react';
 import note_des from "../assets/svg_designs/note_design.svg";
 import box_des from "../assets/svg_designs/box_design.svg";
-import { FaEye, FaGraduationCap, FaAnchor, FaPlus } from "react-icons/fa";
+import { FaEye, FaGraduationCap, FaAnchor, FaSearch, FaPlus } from "react-icons/fa";
 
 const CorporateStatement = () => {
   return (
@@ -28,12 +28,12 @@ const CorporateStatement = () => {
           {
             icon: <FaEye className='text-black' />,
             title: "OUR VISION",
-            description: "To make Homeownership Dream A Reality",
+            description: "To attain, retain, and exceed 0.0001% of global real estate and Agro market share value.",
           },
           {
             icon: <FaGraduationCap className='text-black' />,
             title: "OUR MISSION",
-            description: "To empower clients through transparent transactions and personalized service, setting new standards in the real estate industry.",
+            description: "By identifying and strategically investing in global emerging markets and deploying tech driven initiatives.",
           },
           {
             icon: <FaAnchor className='text-black' />,
@@ -44,6 +44,18 @@ const CorporateStatement = () => {
               "I - INTEGRITY",
               "S - SERVICE",
               "E - EXCELLENCE",
+            ],
+          },
+          {
+            icon: <FaSearch className='text-black' />,
+            title: "OUR SERVICES",
+            description: [
+              "Real Estate Investment",
+              "Property Development",
+              "Marketing and Sales",
+              "Recruitment and Training",
+              "Consultancy",
+              "Brokerage"
             ],
           },
         ].map((item, index) => (

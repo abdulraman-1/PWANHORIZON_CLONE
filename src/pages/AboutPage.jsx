@@ -16,7 +16,7 @@ const AboutPage = () => {
                 <div className="relative w-full mb-12">
                     {/* Background Image */}
                     <div className="relative w-full h-64 overflow-hidden">
-                    <div className="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,.4)]"></div>
+                        <div className="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,.4)]"></div>
 
                         <img
                             src={pwanhaven_about}
@@ -48,7 +48,7 @@ const AboutPage = () => {
                         <div className="flex-1 py-6 xl:pl-6 xl:py-24">
                             <h2 className="text-2xl xl:text-4xl mb-6 font-bold text-left">PWAN HORIZON</h2>
                             <p className="text-xs xl:text-sm text-gray-400 leading-6 font-semibold">
-                                PWAN HORIZON Investment & Realtors Limited Is A Real Estate Network Marketing Company And An Affiliate Of Nigeria Foremost Real Estate Firm, The Pwan Group. Founded On The 8th Of December 2017 And Registered With The Corporate Affairs Commission As Pwan Haven Investment & Realtors Ltd And Also With The Lagos State Real Estate Regulatory Authority With Permit No (bos/1000033/2020). Pwan Haven Is Your One-stop-shop For Properties And Real Estate Investments; Residential And Commercial Lands And Buildings Etc.
+                                PWAN Horizon Realty and Agro Ltd. is a metropolitan first world minded Real Estate marketing and development company focused on urban gentrification and rural linkage. We are poised to create eco-friendly and sustainable environments for humanity and deliver significant values and ROI to our stakeholders while contributing to the reduction in the housing deficit. We make home ownership dream a reality and at the same time enhance food supply through our Agro focused farming.
                             </p>
                             <div className="mt-6">
                                 <img src={line2_des} className="w-full" alt="Line Divider" />
@@ -57,11 +57,11 @@ const AboutPage = () => {
                     </div>
 
                     {/* Additional Text Section */}
-                    <div className="pb-6 xl:pb-24 ">
+                    <div className="pb-6 xl:pb-18 ">
                         <p className="text-xs  xl:text-sm text-gray-400 leading-6 font-semibold">
-                            In The Past 7 Years We Have Gone Beyond Making Land And Home Ownership Dream A Reality Into Being A Premium Real Estate Brand Known For Trust, Excellence And Exceptional Delivery. Our Properties And Investment Are Of Great Value And We Offer Very Flexible And Affordable Payment Plans For All Investors. We Have Premium And Fast Selling Estates Situated In Lagos, Warri, Asaba, Uyo, Owerri & Aba.
-
-                            We Are The Owners Of The Luxurious Residential Estate Known As Haven Residence Located At Abijo Gra And Crystal Haven Located At Mobil-road, Ilaje-ajah Lagos. All Our Estates Offer High Returns On Investment And Are Situated In Secured, Serene And Very Fast Developing Areas. Our Success Story Is Centered On A Dynamic, Innovative And Creative Team Striving For Excellence And Continuous Process Improvement, Prompt Service Delivery, Quality Products And Service, Mouth Watering Offerings And Prompt After Sales Services. We Also Go The Extra Mile To Ensure Our Properties Are Safe For Profitable Investments, We Ensure A Stress-free Inspection, Quality Development Projects And Prompt Plot Allocations. These Differentiates Us From Our Competitors And Makes Us The Right Partners To Take You Home.
+                            At PWAN Horizon, we believe that there is a strong connection between the soul of a man and the environment he lives in, he thrives successfully if he lives in an eco-friendly and sustainable city. This is why we are committed to urban renewal and rural linkage.
+                            We have delivered investments and home ownership opportunities to over 5000 clientele across the globe, and as a people centric organization focused on empowering greatness, we have empowered over 300,000 active real estate professionals across the globe.
+                            Armed with over 12 years of industry and management experience, we are committed and are driven by purpose to deliver home ownership and create wealth.
                         </p>
                         <div className="mt-6 mb-22">
                             <img src={line2_des} className="w-full" alt="Line Divider" />

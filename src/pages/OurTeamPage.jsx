@@ -6,30 +6,15 @@ import h1 from "../assets/images/team/h1.jpg"
 import h2 from "../assets/images/team/h2.jpg"
 import h3 from "../assets/images/team/h3.jpg"
 import h4 from "../assets/images/team/h4.jpg"
-import h5 from "../assets/images/team/h5.jpg"
-import h6 from "../assets/images/team/h6.jpg"
-import h7 from "../assets/images/team/h7.jpg"
-import h8 from "../assets/images/team/h8.jpg"
-import h9 from "../assets/images/team/h9.jpg"
-import h10 from "../assets/images/team/h10.jpg"
-import h11 from "../assets/images/team/h11.jpg"
-import h12 from "../assets/images/team/h12.jpg"
 import { FaPlus } from "react-icons/fa";
 
 const OurTeamPage = () => {
     const team = [
-        { image: h1, name: "Gerard Udeokoye", position: "EXECUTIVE DIRECTOR" },
-        { image: h2, name: "Efe Ejeh", position: "HOD, Human Resources/ Admin" },
-        { image: h3, name: "Micheal Okesanya", position: "HOD, ACCOUNTS" },
-        { image: h4, name: "Emmanuel Esangbedo", position: "Chief Operating Officer" },
-        { image: h4, name: "Precious Okpaje", position: "Chief Operating Officer" },
-        { image: h6, name: "Emmanuella Nzenwa", position: "Research & Development" },
-        { image: h7, name: "Oteri Eseoghene", position: "HOD, Media Department" },
-        { image: h8, name: "Murphy Ibeh", position: "AUDITOR" },
-        { image: h9, name: "Kevwe Onovughakpo", position: "BDE Asaba" },
-        { image: h10, name: "Nelson Ita", position: "BDE UYO" },
-        { image: h11, name: "Anthony Sanco", position: "BDE WARRI" },
-        { image: h12, name: "Donald Okereke", position: "BDE OWERRI" },
+        { image: h1, name: "AMAECHI SIXTUS CHIMEZIE ", position: "BDE, Business Development Executive" },
+        { image: h2, name: "AMAECHI SIXTUS CHIMEZIE ", position: "BDE, Business Development Executive" },
+        { image: h4, name: "Mike Ichie Anna.C ", position: "" },
+        { image: h3, name: "POPOOLA OMOLOLA FAITH", position: "" },
+
     ]
 
     return (

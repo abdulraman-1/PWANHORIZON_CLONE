@@ -42,7 +42,7 @@ const Header = ({ isOpen, toggleMenu }) => {
                     <div className="flex items-center relative">
                         <img src={nav_des} className="hidden -z-10 lg:block absolute right-24" />
                         <Link to="/buynow">
-                            <button className="flex rounded-sm items-center font-semibold gap-2 bg-red-600 z-1 text-black px-6 py-3 text-[0.6rem] xl:text-sm whitespace-nowrap">
+                            <button className="flex rounded-xs items-center font-semibold gap-2 bg-red-600 z-1 text-black lg:px-10 px-6 py-3 text-[0.6rem] xl:text-sm whitespace-nowrap">
                                 <PiUsersThreeFill className="text-white" />
                                 <span className="text-xs">BUY NOW</span>
                             </button>

@@ -4,16 +4,14 @@ import note_des from "../assets/svg_designs/note_design.svg";
 import box_des from "../assets/svg_designs/box_design.svg";
 import h1 from "../assets/images/team/h1.jpg"
 import h2 from "../assets/images/team/h2.jpg"
-import h3 from "../assets/images/team/h3.jpg"
 import h4 from "../assets/images/team/h4.jpg"
-import { FaPlus } from "react-icons/fa";
+// import { FaPlus } from "react-icons/fa";
 
 const OurTeamPage = () => {
     const team = [
         { image: h1, name: "AMAECHI SIXTUS CHIMEZIE", position: "BDE, Business Development Executive" },
         { image: h2, name: "UGOCHUKWU J.ACHI", position: "BDE, Business Development Executive" },
-        { image: h4, name: "Mike Ichie Anna.C ", position: "Accountant" },
-        { image: h3, name: "POPOOLA OMOLOLA FAITH", position: "Customer Service" },
+        { image: h4, name: "POPOOLA OMOLOLA FAITH", position: "Customer Service" },
 
     ]
 
@@ -42,13 +40,13 @@ const OurTeamPage = () => {
                                         <img src={value.image} className="max-w-full h-auto" />
 
                                         {/* Hover Overlay */}
-                                        <div className="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,.4)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                                        {/* <div className="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,.4)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
                                             <div className="w-full h-full flex items-center justify-center">
                                                 <div className="flex items-center justify-center w-12 h-12 rounded-full border-6 border-gray-100 bg-red-600">
                                                     <FaPlus className="text-xs " />
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> */}
                                     </div>
 
                                     <h3 className="text-red-600 px-2 font-semibold mt-3">{value.name}</h3>

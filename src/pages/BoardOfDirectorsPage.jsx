@@ -54,7 +54,7 @@ const BoardOfDirectorsPage = () => {
 
                         {/* Text Section */}
                         <div className="flex-1">
-                            <h2 className="text-blue-900 text-2xl text-left mb-4 font-bold xl:text-left">Daniel Nnamdi</h2>
+                            <h2 className="text-blue-900 text-2xl text-left mb-4 font-bold xl:text-left">Daniel Nnadi</h2>
                             <p className="text-sm  text-red-600 font-semibold mb-4">MD/CEO</p>
                             <p className="text-xs xl:text-sm text-gray-400 leading-6 font-semibold">
                             Daniel Nnamdi is a visionary leader and an accomplished real estate professional with a proven track record in property development, investment, and urban planning. As the Managing Director/CEO of PWANHORIZON, he/she has been instrumental in transforming Nigeria’s real estate landscape by delivering innovative, sustainable, and high-value property solutions                            </p>

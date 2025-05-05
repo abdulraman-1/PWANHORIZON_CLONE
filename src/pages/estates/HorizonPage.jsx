@@ -25,6 +25,15 @@ const HorizonPage = () => {
                 "SWIMMING POOL",
                 "LIBARY",
             ],
+            extra: [
+                "Located In close proximity to notable landmarks like:"
+            ],
+            extralocation: [
+                "10mins to Koka Junction",
+                "Asaba International Airport",
+                "Chinese Construction Company",
+                "Admiralty University Immigration",
+            ],
             form: horizonform
         }
     ];
@@ -32,7 +41,7 @@ const HorizonPage = () => {
 
     return (
         <Mainlayout>
-            <Form estateflyer={formInfo[0].flyer} estatename={formInfo[0].name} estatestyle={formInfo[0].style} estatefulldes={formInfo[0].fulldes} estatedes={formInfo[0].des} estateamenities={formInfo[0].amenities} estatelocation={formInfo[0].location} estateform={formInfo[0].form} />
+            <Form estateflyer={formInfo[0].flyer} estatename={formInfo[0].name} estatestyle={formInfo[0].style} estatefulldes={formInfo[0].fulldes} estatedes={formInfo[0].des} estateamenities={formInfo[0].amenities} estatelocation={formInfo[0].location} estateform={formInfo[0].form} estateextra={formInfo[0].extra} estateextralocation={formInfo[0].extralocation} />
             <GetInTouch />
             <Footer />
         </Mainlayout>

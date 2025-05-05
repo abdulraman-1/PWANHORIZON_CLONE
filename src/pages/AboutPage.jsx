@@ -26,7 +26,7 @@ const AboutPage = () => {
 
                     {/* Text Content */}
                     <h1 className="text-white px-8 py-3 text-2xl xl:text-4xl font-bold absolute bottom-10 left-0">
-                        PWAN HORIZON <span className="text-red-600">INVESTMENT & REALTORS</span> <br /> LIMITED
+                        PWAN HORIZON <span className="text-red-600">REALTY & AGRO</span> <br /> LIMITED
                         <div className="mt-4">
                             <img src={line1_des} className="w-screen" />
                         </div>

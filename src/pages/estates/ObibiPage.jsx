@@ -25,6 +25,18 @@ const ObibiPage = () => {
                 "SWIMMING POOL",
                 "LIBARY",
             ],
+            extra: [
+                "Located In close proximity to notable landmarks like:"
+            ],
+            extralocation: [
+                "Asaba International Airport",
+                "Witchtech Gerrand Company",
+                "Ogawashi-Ukwu Polytechnic",
+                "Oshimili North LGA",
+                "Northworthy Farms & Agro",
+                "Delta State Govt. House",
+                
+            ],
             form: obibiform
         }
     ];
@@ -32,7 +44,7 @@ const ObibiPage = () => {
 
     return (
         <Mainlayout>
-            <Form estateflyer={formInfo[0].flyer} estatename={formInfo[0].name} estatestyle={formInfo[0].style} estatefulldes={formInfo[0].fulldes} estatedes={formInfo[0].des} estateamenities={formInfo[0].amenities} estatelocation={formInfo[0].location} estateform={formInfo[0].form} />
+            <Form estateflyer={formInfo[0].flyer} estatename={formInfo[0].name} estatestyle={formInfo[0].style} estatefulldes={formInfo[0].fulldes} estatedes={formInfo[0].des} estateamenities={formInfo[0].amenities} estatelocation={formInfo[0].location} estateform={formInfo[0].form} estateextra={formInfo[0].extra} estateextralocation={formInfo[0].extralocation} />
             <GetInTouch />
             <Footer />
         </Mainlayout>

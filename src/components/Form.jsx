@@ -3,7 +3,7 @@ import box_des from "../assets/svg_designs/box_design.svg";
 import { IoPin } from "react-icons/io5";
 
 
-const Form = ({ estateflyer, estatename, estatestyle, estatedes, estatefulldes, estateamenities, estatelocation, estateform }) => {
+const Form = ({ estateflyer, estatename, estatestyle, estatedes, estatefulldes, estateamenities, estatelocation, estateform, estateextralocation, estateextra }) => {
     return (
         <div className="bg-white p-10 xl:p-20 w-full xl:w-4/5 mb-24 relative">
             {/* Background Designs */}
@@ -37,6 +37,22 @@ const Form = ({ estateflyer, estatename, estatestyle, estatedes, estatefulldes, 
 
                 {
                     estatelocation.map((value, index) => (
+                        <p key={index} className="flex gap-1 items-center text-gray-500 mb-2 text-sm font-semibold">
+                            <IoPin className="text-red-600 " />
+                            {value}
+                        </p>
+                    ))
+                }
+
+                {
+                    estateextra.map((value, index) => (
+                        <p key={index} className="text-gray-500 mb-2 text-sm font-semibold">{value}</p>
+                    ))
+
+                }
+
+                {
+                    estateextralocation.map((value, index) => (
                         <p key={index} className="flex gap-1 items-center text-gray-500 mb-2 text-sm font-semibold">
                             <IoPin className="text-red-600 " />
                             {value}

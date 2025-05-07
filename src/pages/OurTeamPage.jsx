@@ -4,14 +4,15 @@ import note_des from "../assets/svg_designs/note_design.svg";
 import box_des from "../assets/svg_designs/box_design.svg";
 import h1 from "../assets/images/team/h1.jpg"
 import h2 from "../assets/images/team/h2.jpg"
-import h4 from "../assets/images/team/h4.jpg"
+// import h4 from "../assets/images/team/h4.jpg"
+import h3 from "../assets/images/team/h3.jpg"
 // import { FaPlus } from "react-icons/fa";
 
 const OurTeamPage = () => {
     const team = [
         { image: h1, name: "AMAECHI SIXTUS CHIMEZIE", position: "BDE, Business Development Executive" },
         { image: h2, name: "UGOCHUKWU J.ACHI", position: "BDE, Business Development Executive" },
-        { image: h4, name: "POPOOLA OMOLOLA FAITH", position: "Customer Service" },
+        { image: h3, name: "POPOOLA OMOLOLA FAITH", position: "Customer Service" },
 
     ]
 

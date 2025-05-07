@@ -52,7 +52,7 @@ const BoardOfDirectorsPage = () => {
                         {/* Text Section */}
                         <div className="flex-1">
                             <h2 className="text-blue-900 text-2xl text-left mb-4 font-bold xl:text-left">Dr Jane Obioma Onwumere</h2>
-                            <p className="text-sm  text-red-600 font-semibold mb-4">Co-Founders Of PWAN GROUP</p>
+                            <p className="text-sm  text-red-600 font-semibold mb-4">President Of PWAN GROUP</p>
                             <p className="text-xs xl:text-sm text-gray-400 leading-6 font-semibold text-justify">
                                 Dr Jayne Obioma Onwumere (Sun Man of the Year 2024) epitomizes visionary leadership as the Co-founder of Properly World Africa Network (PWAN), the first real estate network marketing company in the World. Since its inception in March 2012 as PWAN HOMES Limited, Dr Jayne has steered the organization to unparalleled success. She is currently serving as the President/Chief Executive Officer and Group Managing Director of PWAN and oversees a vast network comprising 63 Managing Directors and over 1200 full-time staff across 62 affiliate companies. Under her guidance, PWAN has cultivated a dynamic community of over 300,000 independent real estate professionals globally popularly known as PWAN Business Owners (PBOs).
 

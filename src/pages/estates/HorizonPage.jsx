@@ -32,7 +32,8 @@ const HorizonPage = () => {
                 "10mins to Koka Junction",
                 "Asaba International Airport",
                 "Chinese Construction Company",
-                "Admiralty University Immigration",
+                "Admiralty University", 
+                "Immigration",
             ],
             form: horizonform
         }

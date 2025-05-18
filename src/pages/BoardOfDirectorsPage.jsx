@@ -80,7 +80,7 @@ const BoardOfDirectorsPage = () => {
 
                         {/* Text Section */}
                         <div className="flex-1">
-                            <h2 className="text-blue-900 text-2xl text-left mb-4 font-bold xl:text-left">Daniel Nnadi</h2>
+                            <h2 className="text-blue-900 text-2xl text-left mb-4 font-bold xl:text-left">Nnadi O. Daniel</h2>
                             <p className="text-sm  text-red-600 font-semibold mb-4">Managing Director/CEO</p>
                             <p className="text-xs xl:text-sm text-gray-400 leading-6 font-semibold text-justify">
                                 NNADI Daniel Osonduagwike (Global Salesman), is a seasoned Real Estate Investment Advisory Professional, an active citizen, an ardent advocate of the first world mindset, a strong proponent of transformational values, and servant leader with over 14 years professional experience cutting across Human Resources, Executive Management, Real Estate, Sales and Marketing, and Leadership Development.

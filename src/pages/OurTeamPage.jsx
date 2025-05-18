@@ -12,7 +12,7 @@ const OurTeamPage = () => {
     const team = [
         { image: h1, name: "AMAECHI SIXTUS CHIMEZIE", position: "BDE, Business Development Executive" },
         { image: h2, name: "UGOCHUKWU J.ACHI", position: "BDE, Business Development Executive" },
-        { image: h3, name: "POPOOLA OMOLOLA FAITH", position: "Customer Service" },
+        { image: h3, name: "POPOOLA OMOLOLA FAITH", position: "Accountant" },
 
     ]
 

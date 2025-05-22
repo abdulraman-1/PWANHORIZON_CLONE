@@ -2,8 +2,18 @@ import note_des from "../assets/svg_designs/note_design.svg";
 import box_des from "../assets/svg_designs/box_design.svg";
 import { IoPin } from "react-icons/io5";
 
-
-const Form = ({ estateflyer, estatename, estatestyle, estatedes, estatefulldes, estateamenities, estatelocation, estateform, estateextralocation, estateextra }) => {
+const Form = ({
+    estateflyer,
+    estatename,
+    estatestyle,
+    estatedes,
+    estatefulldes,
+    estateamenities,
+    estatelocation,
+    estateform,
+    estateextralocation,
+    estateextra
+}) => {
     return (
         <div className="bg-white p-10 xl:p-20 w-full xl:w-4/5 mb-24 relative">
             {/* Background Designs */}
@@ -28,53 +38,49 @@ const Form = ({ estateflyer, estatename, estatestyle, estatedes, estatefulldes, 
                     {estatefulldes} <span className="text-red-600">{estatedes}</span>
                 </h2>
 
-                {
-                    estateamenities.map((value, index) => (
-                        <p key={index} className="text-gray-500 mb-2 text-sm font-semibold">{value}</p>
-                    ))
+                {Array.isArray(estateamenities) && estateamenities.map((value, index) => (
+                    <p key={index} className="text-gray-500 mb-2 text-sm font-semibold">{value}</p>
+                ))}
 
-                }
+                {Array.isArray(estatelocation) && estatelocation.map((value, index) => (
+                    <p key={index} className="flex gap-1 items-center text-gray-500 mb-2 text-sm font-semibold">
+                        <IoPin className="text-red-600 " />
+                        {value}
+                    </p>
+                ))}
 
-                {
-                    estatelocation.map((value, index) => (
-                        <p key={index} className="flex gap-1 items-center text-gray-500 mb-2 text-sm font-semibold">
-                            <IoPin className="text-red-600 " />
-                            {value}
-                        </p>
-                    ))
-                }
+                {Array.isArray(estateextra) && estateextra.map((value, index) => (
+                    <p key={index} className="text-gray-500 mb-2 text-sm font-semibold">{value}</p>
+                ))}
 
-                {
-                    estateextra.map((value, index) => (
-                        <p key={index} className="text-gray-500 mb-2 text-sm font-semibold">{value}</p>
-                    ))
+                {Array.isArray(estateextralocation) && estateextralocation.map((value, index) => (
+                    <p key={index} className="flex gap-1 items-center text-gray-500 mb-2 text-sm font-semibold">
+                        <IoPin className="text-red-600 " />
+                        {value}
+                    </p>
+                ))}
 
-                }
-
-                {
-                    estateextralocation.map((value, index) => (
-                        <p key={index} className="flex gap-1 items-center text-gray-500 mb-2 text-sm font-semibold">
-                            <IoPin className="text-red-600 " />
-                            {value}
-                        </p>
-                    ))
-                }
-
-                <p className="text-gray-500 my-4  font-semibold">HURRY, SUBSCRIBE NOW WHILE OFFER LAST!!</p>
+                <p className="text-gray-500 my-4 font-semibold">HURRY, SUBSCRIBE NOW WHILE OFFER LAST!!</p>
 
                 <div className="flex mt-12 group z-20">
                     <div className="w-0 group-active:w-12 group-hover:w-12 transition-normal duration-100 bg-gray-600"></div>
-                    <a href={estateform} target="_blank">
+                    <a href={estateform} target="_blank" rel="noopener noreferrer">
                         <button className="text-xs whitespace-nowrap px-6 py-4 font-semibold bg-red-600 text-white">
                             DOWNLOAD SUBSCRIPTION FORM
                         </button>
                     </a>
                 </div>
-
             </div>
-
         </div>
-    )
-}
+    );
+};
 
-export default Form
+// Provide default values to avoid errors if props are not passed
+Form.defaultProps = {
+    estateamenities: [],
+    estatelocation: [],
+    estateextra: [],
+    estateextralocation: [],
+};
+
+export default Form;
